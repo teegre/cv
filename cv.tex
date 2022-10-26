@@ -1,0 +1,72 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = utf-8 unicode
+% _*_ coding: UTF-8; _*_
+% vim: set fenc=utf-8
+
+\documentclass[letterpaper,MMMyyy,nonstopmode]{simpleresumecv}
+
+\usepackage{bookmark}
+
+\newcommand{\CVAuthor}{Stéphane Meyer}
+\newcommand{\CVWebpage}{http://github.com/teegre}
+\newcommand{\CVTitle}{Curriculum Vitae de Stéphane Meyer}
+\newcommand{\CVNote}{CV compilé le {\today}}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+% bookmarks=true,
+% bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+\begin{document}
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+  73 rue Vascosan 80000 Amiens
+  \par
+  \href{mailto:stm3y3r@icloud.com}
+  {stm3y3r@icloud.com}
+  \,\SubBulletSymbol\,
+  +33 660 783 256
+  \,\SubBulletSymbol\,
+  \href{\CVWebpage}
+  {\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+  \Section{Experience}
+  {Experience}
+  {PDF:Experience}
+  \Entry{\textbf{Intelligent Software}}
+  Glisy
+  \Gap
+  \BulletItem
+  Hotliner spécialisé logiciel huissier.
+  \hfill
+  \DatestampYM{2018}{04}
+  \DatestampYM{2019}{06}
+  \begin{Detail}
+    \SubBulletItem
+    Télé-assistance pour les utilisateurs du logiciel huissier Intelligent Software.
+    \SubBulletItem
+    À la demande des clients, extractions de données par requêtes SQL.
+  \end{Detail}
+  \Entry{\textbf{SCP Blanc-Grassin}}
+\end{Body}
+\end{document}
