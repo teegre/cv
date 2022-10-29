@@ -9,15 +9,15 @@
 
 \usepackage{sectsty}
 
-\sectionfont{%
+\sectionfont{
   \large
   \fontfamily{qag}\selectfont
-\sectionrule{0pt}{0pt}{-5pt}{1pt}}
+  \sectionrule{0pt}{0pt}{-5pt}{1pt}}
 
 \pagestyle{empty}
 
 \newlength{\spacebox}
-\settowidth{\spacebox}{aaaa1234aaaaaaaa1234}
+\settowidth{\spacebox}{123456789}
 
 \newcommand{\sepspace}{\vspace*{1em}}
 
@@ -45,12 +45,11 @@
   \parbox{2\spacebox}{\textsc{#1}}
   #2 \par}
 
-\newcommand{\lan}[2]{
+\newcommand{\lang}[2]{
   \noindent\hangindent=2em\hangafter=0
-  \parboc{\spacebox}{
-    \textbf{#1}}
-  #2 \par
-}
+  \parbox{2\spacebox}{%
+  \textbf{#1}}
+  #2 \par}
 
 \newcommand{\education}[4]{
   \noindent \textbf{#1}
@@ -89,7 +88,7 @@
 \info{Téléphone : } {+33 660 783 256}
 \info{Adresse : } {73 rue Vascosan, 80000 Amiens}
 
-\section{Expérience}
+\section*{Expérience}
 \work{Hotliner spécialisé logiciel huissier}{2018--2019}{Intelligent Software -- Glisy (80)}{}
 \begin{itemize}
   \item Télé-assistance pour les utilisateurs du logiciel huissier Intelligent Software.
@@ -145,21 +144,28 @@
   \item Approvisionnement en pièces de la chaîne de montage
 \end{itemize}
 
-\section{Formation}
+\section*{Formation}
 
 \education{\textbf{Concepteur Développeur d'Applications}}{2022--2023}{AFPA Amiens (80)}{}
 \education{\textbf{Assistant ingénieur du son}}{2004}{Le Pré Saint Gervais (93)}{}
 \education{\textbf{Baccalauréat STTIG (Informatique et gestion)}}{1995}{Lycée Le Grand Chênois Montbéliard (25)}{}
 
-\section{Compétences}
+\section*{Compétences}
 
-\skill{\textbf{Langages de programmation}}{\textsc{Python}, \textsc{C}, \textsc{Bash}, \textsc{Java}}
+\skill{Programmation}{\textsc{Python}, \textsc{C}, \textsc{Bash}, \textsc{Java}}
 \skill{Web}{\textsc{HTML}, \textsc{CSS}, \textsc{Javascript}, \textsc{PHP}}
 \skill{Web frameworks}{\textsc{Django}, \textsc{Symfony}}
 \skill{Base de données}{\textsc{MySQL/MariaDB}, \textsc{SQLite}, \textsc{MS Access}}
 \skill{Autres}{\textsc{Archlinux}, \textsc{NeoVim}, \textsc{Git},\textsc{Markdown}, \LaTeX, \textsc{Docker}}
 
-\section{Centres d'intérêt}
+\section*{Langues}
+
+\lang{Français : }{Langue maternelle}
+\lang{Anglais : }{Courant}
+\lang{Allemand : }{Scolaire}
+\lang{Chinois : }{Notions}
+
+\section*{Centres d'intérêt}
 
 \skill{Musique}{Guitare, Claviers, Chant, MAO}
 \skill{Dessin}{}
